@@ -28,11 +28,22 @@ class AuthController extends BaseController {
 
     try
     {
-      $user = Sentry::authenticate($credentials, false);
-      if ($user)
-      {
-        return Redirect::route('admin.pages.index');
-      }
+		$this->validator(
+			array(
+				'email'=>'email|required',
+				'password'=>'required'
+			),
+			array(
+				'email'=>'账号是邮箱地址',
+				'email.required' => '账号不能为空',
+				'password.required' => '密码不能为空'
+			)
+		);
+		$user = Sentry::authenticate($credentials, false);
+		if ($user->hasAccess('admin'))
+		{
+		return Redirect::route('admin.pages.index');
+		}
     }
     catch(\Exception $e)
     {

@@ -15,4 +15,12 @@ class BaseController extends Controller {
 		}
 	}
 
+	protected function validator(array $rules,array $messages=array()){
+		#获取表单的数据
+		$data = Input::only(array_keys($rules));
+		#验证数据
+		$validator = Validator::make($data,$rules,$messages);
+		if($validator->fails()) throw new Exception($validator->errors()->first());
+	}
+
 }
