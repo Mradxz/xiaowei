@@ -19,9 +19,13 @@ Route::get('admin/logout', array('as' => 'admin.logout', 'uses' => 'App\Controll
 Route::get('admin/login', array('as' => 'admin.login', 'uses' => 'App\Controllers\Admin\AuthController@getLogin'));
 Route::post('admin/login', array('as' => 'admin.login.post', 'uses' => 'App\Controllers\Admin\AuthController@postLogin'));
 
-Route::group(array('prefix' => 'admin', 'before' => 'auth.admin'), function()
+Route::get('admin/webos', array('as' => 'admin.webos', function(){
+    return View::make('webos.index');
+}));
+
+Route::group(array('prefix' => 'admin', 'before' => 'auth.admin|csrf'), function()
 {
     Route::any('/', 'App\Controllers\Admin\AuthController@getLogout');
-    //Route::resource('articles', 'App\Controllers\Admin\ArticlesController');
+    Route::get('articles', 'App\Controllers\Admin\ArticlesController');
     //Route::resource('pages', 'App\Controllers\Admin\PagesController');
 });

@@ -1,9 +1,6 @@
 <?php
-
 namespace App\Controllers\Admin;
-
 use Auth, BaseController, Form, Input, Redirect, Sentry, View;
-
 class AuthController extends BaseController {
 
   /**
@@ -42,7 +39,7 @@ class AuthController extends BaseController {
 		$user = Sentry::authenticate($credentials, false);
 		if ($user->hasAccess('admin'))
 		{
-		return Redirect::route('admin.pages.index');
+			return Redirect::route('admin.webos');
 		}
     }
     catch(\Exception $e)
