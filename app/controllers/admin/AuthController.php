@@ -18,11 +18,6 @@ class AuthController extends BaseController {
    */
   public function postLogin()
   {
-    $credentials = array(
-      'email'    => Input::get('email'),
-      'password' => Input::get('password')
-    );
-
     try
     {
 		$this->validator(
@@ -36,6 +31,7 @@ class AuthController extends BaseController {
 				'password.required' => '密码不能为空'
 			)
 		);
+		$credentials = Input::only('email','password');
 		$user = Sentry::authenticate($credentials, false);
 		if ($user->hasAccess('admin'))
 		{
@@ -44,7 +40,14 @@ class AuthController extends BaseController {
     }
     catch(\Exception $e)
     {
-      return Redirect::route('admin.login')->withErrors(array('login' => $e->getMessage()));
+    	$info = $this->str2Msg($e->getMessage(),
+    			array(
+    				"suspended"=>"账号被锁定请过一段时间再试",
+    				"not match"=>"账号或者密码错误",
+    				"could not be found with a login value"=>"账号或者密码错误",
+    			)
+    		);
+     	return Redirect::route('admin.login')->withErrors(array('login' => $info));
     }
   }
 
@@ -57,5 +60,4 @@ class AuthController extends BaseController {
     Sentry::logout();
     return Redirect::route('admin.login');
   }
-
 }

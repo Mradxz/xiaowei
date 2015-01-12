@@ -14,5 +14,14 @@ return array(
 	*/
 
 	'debug' => true,
+/*
+	'providers' => array(
+		'Cartalyst\Sentry\SentryServiceProvider',
+		'Way\Generators\GeneratorsServiceProvider',
+	),
 
+	'aliases' => array(
+		'Sentry'            => 'Cartalyst\Sentry\Facades\Laravel\Sentry',
+	),
+	*/
 );

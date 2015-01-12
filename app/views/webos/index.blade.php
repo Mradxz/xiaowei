@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>凤巢医疗业务平台3.0</title>
+		<title>蜂巢云站群</title>
 		<meta name="Keywords" content="" />
 		<meta name="description" content="" />
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
@@ -19,7 +19,7 @@
 		<script type="text/javascript" src="/webos/js/iframeTools.js"></script>
         <script type="text/javascript" src="/webos/js/jquery-ui-1.8.24.custom.min.js"></script>
         <script type="text/javascript" src="/webos/js/interface.js"></script>
-		<script type="text/javascript" src="/webos/js/data.js?09091dfdddd6"></script>
+		<script type="text/javascript" src="/webos/js/data.js"></script>
 		<script>
 		/*
 			jQuery.ajax({
@@ -34,15 +34,15 @@
 			});
 		*/
 			DATA.app.addapp = {
-				appid:'112354',
-				type:'add',
+				appid:'addapp',
+				type:'app',
 				icon:'addapp.png',
 				name:'添加应用',
 				url:'/appMain',
 				sonMenu:"[]",
 			}
 		</script>
-		<script type="text/javascript" src="/webos/js/bsv1.3-core.js?09h0916">
+		<script type="text/javascript" src="/webos/js/bsv1.3-core.js">
 		</script>
         <!--[if lt IE 7]>
  			<style type="text/css">
@@ -64,123 +64,10 @@
 						<div style="background: url(/webos/images/bg/blue.jpg) no-repeat;" class="themeSetting_settingButton_icon"></div>
 						<div class="themeSetting_settingButton_text">梦幻光影</div>
 					</a>
-					<a href="###" themeid="theme_pinky_night" class="themeSetting_settingButton" id="themeSetting_theme_pinky_night">
-						<div style="background: url(http://www.jq-school.com/upload/bg/icon/theme_pinky_night.jpg) no-repeat;" class="themeSetting_settingButton_icon"></div>
-						<div class="themeSetting_settingButton_text">粉红之夜</div>
-					</a>
-					<a href="###" themeid="theme_green" class="themeSetting_settingButton" id="themeSetting_theme_green">
-						<div style="background: url(http://www.jq-school.com/upload/bg/icon/theme_green.jpg) no-repeat;" class="themeSetting_settingButton_icon"></div>
-						<div class="themeSetting_settingButton_text">青青世界</div>
-					</a>
-					<a href="###" themeid="theme_wood1" class="themeSetting_settingButton" id="themeSetting_theme_wood1">
-						<div style="background: url(http://www.jq-school.com/upload/bg/icon/theme_wood1.jpg) no-repeat;" class="themeSetting_settingButton_icon"></div>
-						<div class="themeSetting_settingButton_text">温馨木纹</div>
-					</a>
-					<a href="###" themeid="theme_wood2" class="themeSetting_settingButton" id="themeSetting_theme_wood2">
-						<div style="background: url(/images/bg/wood2.jpg) no-repeat;" class="themeSetting_settingButton_icon"></div>
-						<div class="themeSetting_settingButton_text">黑色木纹</div>
-					</a>
-					<a href="###" themeid="theme_universe" class="themeSetting_settingButton" id="themeSetting_theme_universe">
-						<div style="background: url(http://www.jq-school.com/upload/bg/icon/theme_universe.jpg) no-repeat;" class="themeSetting_settingButton_icon"></div>
-						<div class="themeSetting_settingButton_text">神秘星际</div>
-					</a>
-					<a href="###" themeid="theme_metal" class="themeSetting_settingButton" id="themeSetting_theme_metal">
-						<div style="background: url(http://www.jq-school.com/upload/bg/icon/theme_metal.jpg) no-repeat;" class="themeSetting_settingButton_icon"></div>
-						<div class="themeSetting_settingButton_text">酷炫金属</div>
-					</a>
-					<a href="###" themeid="theme_pinky_light" class="themeSetting_settingButton" id="themeSetting_theme_pinky_light">
-						<div style="background: url(http://www.jq-school.com/upload/bg/icon/theme_pinky_light.jpg) no-repeat;" class="themeSetting_settingButton_icon"></div>
-						<div class="themeSetting_settingButton_text">幻彩荧光</div>
-					</a>
-					<a href="###" themeid="theme_pinky_flower" class="themeSetting_settingButton" id="themeSetting_theme_pinky_flower">
-						<div style="background: url(http://www.jq-school.com/upload/bg/icon/theme_pinky_flower.jpg) no-repeat;" class="themeSetting_settingButton_icon"></div>
-						<div class="themeSetting_settingButton_text">绚烂繁花</div>
-					</a>
-					<a href="###" themeid="theme_christmas" class="themeSetting_settingButton" id="themeSetting_theme_christmas">
-						<div style="background: url(http://www.jq-school.com/upload/bg/icon/theme_christmas.jpg) no-repeat;" class="themeSetting_settingButton_icon"></div>
-						<div class="themeSetting_settingButton_text">圣诞快乐</div>
-					</a>
-					<a href="###" themeid="theme_2011" class="themeSetting_settingButton" id="themeSetting_theme_2011">
-						<div style="background: url(http://www.jq-school.com/upload/bg/icon/theme_2011.jpg) no-repeat;" class="themeSetting_settingButton_icon"></div>
-						<div class="themeSetting_settingButton_text">欢庆元旦</div>
-					</a>
-					<a href="###" themeid="theme_blue1" class="themeSetting_settingButton" id="themeSetting_theme_blue1">
-						<div style="background: url(http://www.jq-school.com/upload/bg/icon/theme_blue1.jpg) no-repeat;" class="themeSetting_settingButton_icon"></div>
-						<div class="themeSetting_settingButton_text">幻彩蓝天</div>
-					</a>
-					<a href="###" themeid="theme_spring_festival" class="themeSetting_settingButton" id="themeSetting_theme_spring_festival">
-						<div style="background: url(http://www.jq-school.com/upload/bg/icon/theme_spring_festival.jpg) no-repeat;" class="themeSetting_settingButton_icon"></div>
-						<div class="themeSetting_settingButton_text">喜迎新春</div>
-					</a>
-					<a href="###" themeid="theme_blue_glow" class="themeSetting_settingButton themeSetting_selected" id="themeSetting_theme_blue_glow">
-						<div style="background: url(http://www.jq-school.com/upload/bg/icon/theme_blue_glow.jpg) no-repeat;" class="themeSetting_settingButton_icon"></div>
-						<div class="themeSetting_settingButton_text">深海仰望</div>
-					</a>
-					<a href="###" themeid="theme_green_glow" class="themeSetting_settingButton" id="themeSetting_theme_green_glow">
-						<div style="background: url(http://www.jq-school.com/upload/bg/icon/theme_green_glow.jpg) no-repeat;" class="themeSetting_settingButton_icon"></div>
-						<div class="themeSetting_settingButton_text">晨光微曦</div>
-					</a>
-					<a href="###" themeid="theme_orange_glow" class="themeSetting_settingButton" id="themeSetting_theme_orange_glow">
-						<div style="background: url(http://www.jq-school.com/upload/bg/icon/theme_orange_glow.jpg) no-repeat;" class="themeSetting_settingButton_icon"></div>
-						<div class="themeSetting_settingButton_text">梦醒时分</div>
-					</a>
-					<a href="###" themeid="theme_valentinesDay" class="themeSetting_settingButton" id="themeSetting_theme_valentinesDay">
-						<div style="background: url(http://www.jq-school.com/upload/bg/icon/theme_valentinesDay.jpg) no-repeat;" class="themeSetting_settingButton_icon"></div>
-						<div class="themeSetting_settingButton_text">甜蜜情人节</div>
-					</a>
-					<a href="###" themeid="theme_cloud" class="themeSetting_settingButton" id="themeSetting_theme_cloud">
-						<div style="background: url(http://www.jq-school.com/upload/bg/icon/theme_cloud.jpg) no-repeat;" class="themeSetting_settingButton_icon"></div>
-						<div class="themeSetting_settingButton_text">晴空行云</div>
-					</a>
-					<a href="###" themeid="theme_gravity" class="themeSetting_settingButton" id="themeSetting_theme_gravity">
-						<div style="background: url(http://www.jq-school.com/upload/bg/icon/theme_gravity.jpg) no-repeat;" class="themeSetting_settingButton_icon"></div>
-						<div class="themeSetting_settingButton_text">蒲公英</div>
-					</a>
-					<a href="###" themeid="theme_7_7" class="themeSetting_settingButton" id="themeSetting_theme_7_7">
-						<div style="background: url(http://www.jq-school.com/upload/bg/icon/theme_7_7.jpg) no-repeat;" class="themeSetting_settingButton_icon"></div>
-						<div class="themeSetting_settingButton_text">七夕</div>
-					</a>
-					<a href="###" themeid="theme_teachersDay" class="themeSetting_settingButton" id="themeSetting_theme_teachersDay">
-						<div style="background: url(http://www.jq-school.com/upload/bg/icon/theme_teachersDay.jpg) no-repeat;" class="themeSetting_settingButton_icon"></div>
-						<div class="themeSetting_settingButton_text">教师节</div>
-					</a>
-					<a href="###" themeid="theme_midAutumn" class="themeSetting_settingButton" id="themeSetting_theme_midAutumn">
-						<div style="background: url(http://www.jq-school.com/upload/bg/icon/theme_midAutumn.jpg) no-repeat;" class="themeSetting_settingButton_icon"></div>
-						<div class="themeSetting_settingButton_text">中秋节</div>
-					</a>
-					<a href="###" themeid="theme_lookUpSky" class="themeSetting_settingButton" id="themeSetting_theme_lookUpSky">
-						<div style="background: url(http://www.jq-school.com/upload/bg/icon/theme_lookUpSky.jpg) no-repeat;" class="themeSetting_settingButton_icon"></div>
-						<div class="themeSetting_settingButton_text">仰望苍穹</div>
-					</a>
-					<a href="###" themeid="theme_grass" class="themeSetting_settingButton" id="themeSetting_theme_grass">
-						<div style="background: url(http://www.jq-school.com/upload/bg/icon/theme_grass.jpg) no-repeat;" class="themeSetting_settingButton_icon"></div>
-						<div class="themeSetting_settingButton_text">茫茫野草</div>
-					</a>
-					<a href="###" themeid="theme_childhood" class="themeSetting_settingButton" id="themeSetting_theme_childhood">
-						<div style="background: url(http://www.jq-school.com/upload/bg/icon/theme_childhood.jpg) no-repeat;" class="themeSetting_settingButton_icon"></div>
-						<div class="themeSetting_settingButton_text">童年记忆</div>
-					</a>
-					<a href="###" themeid="theme_skyBlue" class="themeSetting_settingButton" id="themeSetting_theme_skyBlue">
-						<div style="background: url(http://www.jq-school.com/upload/bg/icon/theme_skyBlue.jpg) no-repeat;" class="themeSetting_settingButton_icon"></div>
-						<div class="themeSetting_settingButton_text">空灵蓝调</div>
-					</a>
-					<a href="###" themeid="theme_dandelionDream" class="themeSetting_settingButton" id="themeSetting_theme_dandelionDream">
-						<div style="background: url(http://www.jq-school.com/upload/bg/icon/theme_dandelionDream.jpg) no-repeat;" class="themeSetting_settingButton_icon"></div>
-						<div class="themeSetting_settingButton_text">蒲英之梦</div>
-					</a>
-					<a href="###" themeid="theme_paintingTime" class="themeSetting_settingButton" id="themeSetting_theme_paintingTime">
-						<div style="background: url(http://www.jq-school.com/upload/bg/icon/theme_paintingTime.jpg) no-repeat;" class="themeSetting_settingButton_icon"></div>
-						<div class="themeSetting_settingButton_text">水墨年华</div>
-					</a>
-					<a href="###" themeid="theme_dreamSky" class="themeSetting_settingButton" id="themeSetting_theme_dreamSky">
-						<div style="background: url(http://www.jq-school.com/upload/bg/icon/theme_dreamSky.jpg) no-repeat;" class="themeSetting_settingButton_icon"></div>
-						<div class="themeSetting_settingButton_text">梦翔天际</div>
-					</a>
 					</div>
 					<div id="themeSetting_wallpaper" class="themeSetting_wallpaper" style="display: none;"></div>
 				</div>
 		</div>
-
 		<div id="zoomWallpaperGrid" class="zoomWallpaperGrid" style="position: absolute; z-index: -10; left: 0pt; top: 0pt; overflow: hidden; height: 381px; width: 1440px;">
 			<img id="zoomWallpaper" class="zoomWallpaper" style="position: absolute; top: 0pt; left: 0pt; height: 381px; width: 1440px;" src="http://9.web.qstatic.com/webqqpic/style/wallpaper/wood2.jpg"><!--http://www.jq-school.com/upload/bg/blue_glow.jpg-->
 		</div>
@@ -199,8 +86,8 @@
 				<a title="保存桌面快捷方式" target="_blank" href="###">保存桌面快捷方式</a></li>
 				<li cmd="download">
 					<a title="下载客户端" href="###">下载客户端</a></li>
-					<li title="关于Q+ Web" cmd="about" id="taskbar_helpButton">
-					<a href="###">关于Q+ Web</a>
+					<li title="关于蜂巢云站群" cmd="about" id="taskbar_helpButton">
+					<a href="###">关于蜂巢云站群</a>
 				</li>
 				<li cmd="helper">
 					<a title="新手指导" href="###">新手指导</a>

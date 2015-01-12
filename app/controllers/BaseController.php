@@ -23,4 +23,13 @@ class BaseController extends Controller {
 		if($validator->fails()) throw new Exception($validator->errors()->first());
 	}
 
+	protected function str2Msg($str,array $rules){
+		foreach ($rules as $key => $value) {
+			if(str_contains($str,$key)){
+				return $value;
+			}
+		}
+		return $str;
+	}
+
 }
