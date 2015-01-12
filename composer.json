@@ -42,4 +42,7 @@
 		"preferred-install": "dist"
 	},
 	"minimum-stability": "stable"
+	"repositories": [
+    {"type": "composer", "url": "http://pkg.phpcomposer.com/repo/packagist/"},
+    {"packagist": false}
 }
