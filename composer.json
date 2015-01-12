@@ -6,7 +6,8 @@
 	"type": "project",
 	"require": {
 		"laravel/framework": "4.2.*",
-		"cartalyst/sentry": "2.1.4"
+		"cartalyst/sentry": "2.1.4",
+		"dingo/api": "0.8.*"
 	},
     "require-dev": {
         "way/generators": "~2.0"
@@ -41,7 +42,7 @@
 	"config": {
 		"preferred-install": "dist"
 	},
-	"minimum-stability": "stable"
+	"minimum-stability": "stable",
 	"repositories": [
     {"type": "composer", "url": "http://pkg.phpcomposer.com/repo/packagist/"},
     {"packagist": false}
