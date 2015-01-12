@@ -1,0 +1,1 @@
+https://github.com/dingo/api/wiki/Installation
