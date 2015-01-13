@@ -95,3 +95,15 @@ Route::filter('auth.admin', function()
 		return Redirect::route('admin.login');
 	}
 });
+
+Route::filter('auth.app', function()
+{
+	if(! $access_token = Input::header('access-token'))
+		return result(false, '参数无效: access-token');
+	Session::setId($access_token);
+	Session::start();
+	if ( ! Sentry::check())
+	{
+		return result(false, '请登录', 401);
+	}
+});

@@ -25,3 +25,5 @@ Route::group(array('prefix' => 'admin', 'before' => 'auth.admin'), function()
     	return View::make('webos.index');
 	}));
 });
+
+

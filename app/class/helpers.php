@@ -23,3 +23,13 @@ function result($result, $content=null, $error_code=1000)
 		'error_code' => $error_code,
 	];
 }
+
+function str2Msg($str,array $rules)
+{
+	foreach ($rules as $key => $value) {
+		if(str_contains($str,$key)){
+			return $value;
+		}
+	}
+	return $str;
+}

@@ -17,6 +17,7 @@ ClassLoader::addDirectories(array(
 	app_path().'/controllers',
 	app_path().'/models',
 	app_path().'/database/seeds',
+	app_path().'/class',
 
 ));
 
@@ -45,12 +46,12 @@ Log::useFiles(storage_path().'/logs/laravel.log');
 | shown, which includes a detailed stack trace during debug.
 |
 */
-
+/*
 App::error(function(Exception $exception, $code)
 {
 	Log::error($exception);
 });
-
+*/
 /*
 |--------------------------------------------------------------------------
 | Maintenance Mode Handler
@@ -79,3 +80,5 @@ App::down(function()
 */
 
 require app_path().'/filters.php';
+
+require app_path().'/errors.php';

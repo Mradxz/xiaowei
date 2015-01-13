@@ -17,16 +17,22 @@ class UsersController extends \BaseController {
 	 */
 	public function login()
 	{
-		// Login credentials
-	    $credentials = array(
-	        'email'    => Input::get('email', ''),
-	        'password' => Input::get('password', ''),
-	    );
+		$this->validator(
+			array(
+				'email'=>'email|required',
+				'password'=>'required'
+			),
+			array(
+				'email'=>'账号是邮箱地址',
+				'email.required' => '账号不能为空',
+				'password.required' => '密码不能为空'
+			)
+		);
+		$credentials = Input::only('email','password');
 	    // 重置 Session ID
 	    Session::setId(null);
-	    
-	    // Authenticate the user
-	    $user = Sentry::authenticate($credentials, false);
+
+		$user = Sentry::authenticate($credentials, false);
 		$access_token = Session::getId();
 		return result(true, compact('access_token'));
 	}
@@ -37,13 +43,13 @@ class UsersController extends \BaseController {
 	public function register()
 	{
 		$user = Sentry::createUser(array(
-	        'phone'     => Input::get('phone',''),
+	        'email'     => Input::get('email',''),
 	        'password'  => Input::get('password',''),
 	        'activated' => true,
 	    ));
 	    // Find the group using the group id
 	    // id:2 为普通用户组
-	    $group = Sentry::findGroupById(2);
+	    $group = Sentry::findGroupById(1);
 	    // Assign the group to the user
 	    $user->addGroup($group);
 	    return $this->login();

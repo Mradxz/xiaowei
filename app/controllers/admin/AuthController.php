@@ -40,7 +40,7 @@ class AuthController extends BaseController {
     }
     catch(\Exception $e)
     {
-    	$info = $this->str2Msg($e->getMessage(),
+    	$info = str2Msg($e->getMessage(),
     			array(
     				"suspended"=>"账号被锁定请过一段时间再试",
     				"not match"=>"账号或者密码错误",
